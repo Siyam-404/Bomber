@@ -16,15 +16,15 @@ pkg install git -y
 --Clone this repository--
 
 ```
-git clone https://github.com/W8SOJIB/W8NoLimiteSMSBMB
+git clone https://github.com/Siyam-404/Siyam-Bomber.git
 ```
 ```
-cd W8NoLimiteSMSBMB
+cd Siyam-Bomber
 ```
 ```
 ls
 ```
 
 ```
-python Api1.py
+python Siyam.py
 ```
