@@ -40,14 +40,14 @@ def main():
         'x-requested-with': 'XMLHttpRequest'
     }
 
+    # Get mobile number from the user
+    mobile_number = input
     print
 print "Modify   : Mohammed Siyam"
 print "github   : https://github.com/Siyam-404"
 print "Facebook : https://www.facebook.com/Siyam6252"
 print
-
-    # Get mobile number from the user
-    mobile_number = input("Enter the mobile number: ")
+("Enter the mobile number: ")
 
     data = {
         'mobile': mobile_number
