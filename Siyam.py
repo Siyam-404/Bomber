@@ -41,14 +41,14 @@ def main():
     }
 
     # Get mobile number from the user
-    mobile_number = input("SIYAM Enter the mobile number: ")
+    mobile_number = input("On behalf of Siam  Enter the mobile number: ")
 
     data = {
         'mobile': mobile_number
     }
 
     # Ask the user how many requests to send
-    num_requests = int(input("How many SMS do you want to send? "))
+    num_requests = int(input("How many SMS do you want to send: "))
 
     # Run the async loop to send multiple requests
     asyncio.run(send_multiple_requests(url, headers, data, num_requests))
