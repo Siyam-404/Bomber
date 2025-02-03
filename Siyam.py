@@ -41,13 +41,7 @@ def main():
     }
 
     # Get mobile number from the user
-    mobile_number = input
-    print
-print "Modify   : Mohammed Siyam"
-print "github   : https://github.com/Siyam-404"
-print "Facebook : https://www.facebook.com/Siyam6252"
-print
-("Enter the mobile number: ")
+    mobile_number = input("SIYAM Enter the mobile number: ")
 
     data = {
         'mobile': mobile_number
