@@ -16,7 +16,7 @@ async def send_multiple_requests(url, headers, data, num_requests):
         for i in range(num_requests):
             task = send_request(client, url, headers, data, i + 1)
             tasks.append(task)
-        
+
         # Await all the tasks to send requests concurrently
         await asyncio.gather(*tasks)
 
@@ -41,7 +41,7 @@ def main():
     }
 
     # Get mobile number from the user
-    mobile_number = input("On behalf of Siam  Enter the mobile number: ")
+    mobile_number = input("On behalf of Siyam Enter the mobile number: ")
 
     data = {
         'mobile': mobile_number
