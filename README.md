@@ -26,5 +26,5 @@ ls
 ```
 
 ```
-python Siyam.py
+python Siam.py
 ```
