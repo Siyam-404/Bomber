@@ -16,10 +16,10 @@ pkg install git -y
 --Clone this repository--
 
 ```
-git clone https://github.com/Siyam-404/Siyam-Bomber.git
+git clone https://github.com/Siyam-404/Bomber.git
 ```
 ```
-cd Siyam-Bomber
+cd Bomber
 ```
 ```
 ls
