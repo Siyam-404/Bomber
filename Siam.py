@@ -1,4 +1,4 @@
-#-------<$$ DAVLOPER :-- SIAM AHMED ðŸ‘»$$$>----
+#-------<$$ DAVLOPER :-- KALYAN KING ðŸ‘»$$$>----
 #-----<$$ TOOL :--- SMS BOMBERS $$$-->------
 import os
 import sys
@@ -28,13 +28,12 @@ print(f"{RED}============================================{RESET}")
 time.sleep(0.3)
 print(f"{GREEN}         WELCOME BRO!{RESET}")
 time.sleep(0.3)
-print(f"{YELLOW}       SMS BOMBER TOOL - {CYAN}SIAM 
-AHMED{RESET}")
+print(f"{YELLOW}       SMS BOMBER TOOL - {CYAN}KALYAN KING{RESET}")
 time.sleep(0.3)
 print(f"{RED}============================================{RESET}")
 time.sleep(0.3)
 print()
-print(f"{YELLOW}          Developed by: {YELLOW}SIAM AHMED{RESET}")
+print(f"{YELLOW}          Developed by: {YELLOW}Kalyan King{RESET}")
 time.sleep(0.3)
 print(f"{CYAN}          Use Responsibly!{RESET}")
 time.sleep(0.3)
@@ -55,7 +54,7 @@ banner = f"""{GREEN}
   / ___//  |/  / ___/   / __ )/ __ \/  |/  /   
   \__ \/ /|_/ /\__ \   / __  / / / / /|_/ /    
  ___/ / /  / /___/ /  / /_/ / /_/ / /  / /     
-/____/_/  /_//____/  /_____/\____/_/  /_/      SIAM AHMED
+/____/_/  /_//____/  /_____/\____/_/  /_/      kalyan KING
 {RESET}"""
 print(banner)
 
