@@ -1,4 +1,4 @@
-#-------<$$ DAVLOPER :-- KALYAN KING ðŸ‘»$$$>----
+#-------<$$ DAVLOPER :-- SIAM AHMED ðŸ‘»$$$>----
 #-----<$$ TOOL :--- SMS BOMBERS $$$-->------
 import os
 import sys
@@ -28,12 +28,13 @@ print(f"{RED}============================================{RESET}")
 time.sleep(0.3)
 print(f"{GREEN}         WELCOME BRO!{RESET}")
 time.sleep(0.3)
-print(f"{YELLOW}       SMS BOMBER TOOL - {CYAN}KALYAN KING{RESET}")
+print(f"{YELLOW}       SMS BOMBER TOOL - {CYAN}SIAM 
+AHMED{RESET}")
 time.sleep(0.3)
 print(f"{RED}============================================{RESET}")
 time.sleep(0.3)
 print()
-print(f"{YELLOW}          Developed by: {YELLOW}Kalyan King{RESET}")
+print(f"{YELLOW}          Developed by: {YELLOW}SIAM AHMED{RESET}")
 time.sleep(0.3)
 print(f"{CYAN}          Use Responsibly!{RESET}")
 time.sleep(0.3)
@@ -46,15 +47,15 @@ os.system('espeak -a 150 "Welcome bro, SMS Bomber Tool, Kalyan King"')
 time.sleep(1)
 clear()
 #----------<$$$ Open Facebook GUROP $$$>------
-os.system(" xdg-open https://facebook.com/groups/1036123894351028/")
-os.system(" xdg-open https://facebook.com/groups/1036123894351028/")
+os.system(" xdg-open https://facebook.com/Siyam6252")
+os.system(" xdg-open https://facebook.com/Siyam6252")
 #-----------<$$$ ASCII Banner $$$>-----------
 banner = f"""{GREEN}
    _____ __  ________    ____  ____  __  ___   
   / ___//  |/  / ___/   / __ )/ __ \/  |/  /   
   \__ \/ /|_/ /\__ \   / __  / / / / /|_/ /    
  ___/ / /  / /___/ /  / /_/ / /_/ / /  / /     
-/____/_/  /_//____/  /_____/\____/_/  /_/      kalyan KING
+/____/_/  /_//____/  /_____/\____/_/  /_/      SIAM AHMED
 {RESET}"""
 print(banner)
 
