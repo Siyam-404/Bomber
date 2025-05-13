@@ -46,8 +46,8 @@ os.system('espeak -a 150 "Welcome bro, SMS Bomber Tool, SIYAM King"')
 time.sleep(1)
 clear()
 #----------<$$$ Open Facebook GUROP $$$>------
-os.system(" xdg-open https://facebook.com/Siyam6252")
-os.system(" xdg-open https://facebook.com/Siyam6252")
+os.system(" xdg-open https://www.facebook.com/share/166pufWGPV/")
+os.system(" xdg-open https://www.facebook.com/share/166pufWGPV/")
 #-----------<$$$ ASCII Banner $$$>-----------
 banner = f"""{GREEN}
    _____ __  ________    ____  ____  __  ___   
